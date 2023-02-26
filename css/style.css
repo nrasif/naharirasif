@@ -267,7 +267,7 @@ body {
 }
 
 .main-content1 h3:nth-of-type(1) {
-    margin-top: 150px;
+    margin-top: 160px;
     margin-left: 700px;
     font-size: 27px;
     font-weight: 1000;
@@ -308,16 +308,69 @@ body {
     color: #719192;
 }
 
-.main-content1 .python-img, .scikit-img, .xgb-img, .flask-img, .streamlit-img, .mysql-img,
+.main-content1 .python-img, .plotly-img, .scikit-img, .xgb-img, .flask-img, .streamlit-img, .mysql-img,
 .mongodb-img {
     filter: invert(93%) sepia(11%) saturate(476%) hue-rotate(324deg) brightness(90%) contrast(93%);
     -webkit-filter: invert(93%) sepia(11%) saturate(476%) hue-rotate(324deg) brightness(90%) contrast(93%);
 }
 
-.main-content1 .python-img:hover, .scikit-img:hover, .xgb-img:hover, .flask-img:hover, 
+.main-content1 .python-img:hover, .plotly-img:hover, .scikit-img:hover, .xgb-img:hover, .flask-img:hover, 
 .streamlit-img:hover, .mysql-img:hover, .mongodb-img:hover {
     filter: invert(57%) sepia(12%) saturate(588%) hue-rotate(133deg) brightness(94%) contrast(89%);
     -webkit-filter: invert(57%) sepia(12%) saturate(588%) hue-rotate(133deg) brightness(94%) contrast(89%);
+}
+
+.python-div, .plotly-div {
+    display: inline;
+}
+
+.tooltip-python, .tooltip-plotly {
+    position: absolute;
+    display: block;
+    width: 300px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #1A1A1A;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #719192;
+    color: #dfcdc3;
+    padding: 10px 15px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    line-height: 20px;
+}
+
+.tooltip-python{
+    left: 650px;
+    bottom: 300px;
+}
+
+.tooltip-plotly{
+    left: 710px;
+    bottom: 300px;
+}
+
+.python-div:hover .tooltip-python{
+    visibility: visible;
+    opacity: 1;
+}
+
+.plotly-div:hover .tooltip-plotly{
+    visibility: visible;
+    opacity: 1;
 }
 
 .main-content1 .python-img{
@@ -325,6 +378,12 @@ body {
     margin-left: 700px;
     margin-bottom: 10px;
     margin-top: 20px;
+}
+
+.main-content1 .plotly-img{
+    width: 3%;
+    margin-left: 10px;
+    margin-bottom: 5px;
 }
 
 .main-content1 .scikit-img{
