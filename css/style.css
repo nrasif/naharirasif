@@ -320,11 +320,12 @@ body {
     -webkit-filter: invert(57%) sepia(12%) saturate(588%) hue-rotate(133deg) brightness(94%) contrast(89%);
 }
 
-.python-div, .plotly-div {
+.python-div, .plotly-div, .scikit-div, .xgb-div, .flask-div, .streamlit-div, .mysql-div, .mongodb-div {
     display: inline;
+    text-align: center;
 }
 
-.tooltip-python, .tooltip-plotly {
+.tooltip-python, .tooltip-plotly, .tooltip-scikit, .tooltip-xgb, .tooltip-flask, .tooltip-streamlit, .tooltip-mysql, .tooltip-mongodb {
     position: absolute;
     display: block;
     width: 300px;
@@ -363,12 +364,38 @@ body {
     bottom: 300px;
 }
 
-.python-div:hover .tooltip-python{
-    visibility: visible;
-    opacity: 1;
+.tooltip-scikit{
+    left: 760px;
+    bottom: 300px;
 }
 
-.plotly-div:hover .tooltip-plotly{
+.tooltip-xgb{
+    left: 800px;
+    bottom: 300px;
+}
+
+.tooltip-flask{
+    left: 900px;
+    bottom: 300px;
+}
+
+.tooltip-streamlit{
+    left: 1000px;
+    bottom: 300px;
+}
+
+.tooltip-mysql{
+    left: 1100px;
+    bottom: 300px;
+}
+
+.tooltip-mongodb{
+    left: 1200px;
+    bottom: 300px;
+}
+
+.python-div:hover .tooltip-python, .plotly-div:hover .tooltip-plotly, .scikit-div:hover .tooltip-scikit, .xgb-div:hover .tooltip-xgb,
+.flask-div:hover .tooltip-flask, .streamlit-div:hover .tooltip-streamlit, .mysql-div:hover .tooltip-mysql, .mongodb-div:hover .tooltip-mongodb{
     visibility: visible;
     opacity: 1;
 }
